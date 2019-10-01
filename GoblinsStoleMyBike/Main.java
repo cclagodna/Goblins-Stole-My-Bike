@@ -1,3 +1,12 @@
+/*
+INCOMPLETE
+
+Main UI and JavaFX stage
+This will likely be used as the 'main' class
+
+As of 10/01/19
+*/
+
 package GoblinsStoleMyBike;
 
 import javafx.application.Application;
