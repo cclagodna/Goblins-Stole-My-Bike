@@ -18,7 +18,7 @@ This tab will be used for posting...
   - Necessary features that need to be implemented
   - Bugs that need fixing
   - Questions and help with code
-  - **IMPORTANT** When creating a new issue, look for "Projects" on the right. If necessary, add that issue to `GSMB - main` so it can auto-add to the to-do list.
+  - **IMPORTANT:** When creating a new issue, look for "Projects" on the right. If necessary, add that issue to `GSMB - main` so it can auto-add to the to-do list.
 
 ---
 
