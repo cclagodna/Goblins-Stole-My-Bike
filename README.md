@@ -1,6 +1,3 @@
-# Goblins Stole My Bike
-This shall serve as a base for everything regarding our CSI-2999 project.
-
 The **Code** Tab will be used for posting...
 - New code
 - Updated code
