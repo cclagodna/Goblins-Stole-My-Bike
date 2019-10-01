@@ -10,15 +10,15 @@ The **Code** Tab will be used for posting...
 The **ISSUES** tab will be used for posting...
   - New ideas
   - Idea documents
+  - Other documentation
   - Necessary features that need to be implemented
   - Bugs that need fixing
-  - Questions
-  - Help with code
-
-  - This will **NOT** be where code or actual project materials will be placed. Please put that in the code tab. Please also communicate through other means, like text or Discord, as this may not get checked often.
+  - Questions and help with code
 
 The **PROJECTS** tab will...
   - `GSMB - Main`
-    - Keep track of our goals
-    - Act as a "to-do" of sorts
+    - Keep track of our sprints
+    - Act as a to-do list
+      - Can add new issues to the to-do lists
   - Used to create smaller scale projects or "subprojects"
+    - When we break into smaller groups, this could be used by each group to keep track of their progress
