@@ -11,11 +11,14 @@ public class test {
     
     public static void main(String args[]) {
         
-        Thing thing = new Thing("This is my name", "This is a description");
+        SampleMonster mon1 = new SampleMonster();
         
-        System.out.println(thing.getName());
-        System.out.println(thing.getDesc());
-        System.out.println(thing.getImg().getWidth());
+        System.out.println(mon1.getName());
+        System.out.println(mon1.getDesc());
+        System.out.println(mon1.getBaseHp());
+        System.out.println(mon1.getBaseAtk());
+        System.out.println(mon1.getBaseDef());
+        
         
     }
     

@@ -12,9 +12,9 @@ public class Item extends Thing {
     Image img
     ///*/
     
-    private String element = NULL;
-    private int uses = 0;
-    private double power = 1;
+    String element = NULL;
+    int uses = 0;
+    double power = 1;
     
     
     //Constructors
