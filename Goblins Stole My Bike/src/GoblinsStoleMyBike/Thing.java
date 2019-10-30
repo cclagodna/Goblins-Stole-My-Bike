@@ -9,9 +9,9 @@ public class Thing {
     final String NULL = "<null>";
     final Image DEFAULT = new Image(getClass().getResourceAsStream("icons/default.png"));
     
-    private String name = NULL;
-    private String desc = NULL;
-    private Image img = DEFAULT;
+    String name = NULL;
+    String desc = NULL;
+    Image img = DEFAULT;
     
     /*///
     Each constructor calls the one on the bottom

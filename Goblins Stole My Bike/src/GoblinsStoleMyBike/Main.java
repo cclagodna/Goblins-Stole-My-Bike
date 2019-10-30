@@ -22,8 +22,8 @@ public class Main extends Application{
     //Initialize all static (or global) variables
     
     //Width and Height of game window
-    static final int WIDTH = 1000;
-    static final int HEIGHT = 500;
+    static final int WIDTH = 1500;
+    static final int HEIGHT = 900;
     
     //All nodes (or panes) being displayed in the game window
     static VBox right;
@@ -33,6 +33,7 @@ public class Main extends Application{
     static Button btn_inv;
     //static TilePane history;
     static TextArea history;
+    static GridPane default_center;
     
     //Variables used in panes
     static final int menuColumns = 2;
@@ -170,6 +171,10 @@ public class Main extends Application{
         history = new TilePane();
         history.setPrefRows(historyRows);
         */
+    }
+    
+    public void create_GridPane_Default_Center() {
+        default_center = new GridPane();
     }
     
 }

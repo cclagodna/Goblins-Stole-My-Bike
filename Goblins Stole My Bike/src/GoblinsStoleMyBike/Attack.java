@@ -10,11 +10,11 @@ public class Attack extends Thing {
     Image img
     ///*/
     
-    private String element = NULL;
-    private double power = 1;
+    String element = NULL;
+    double power = 1;
     //Currently String, data type likely will change
-    private String statusEffect = NULL;
-    private double statusChance = 0;
+    String statusEffect = NULL;
+    double statusChance = 0;
     
     //Constructors
     //See 'Thing' class for notes

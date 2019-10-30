@@ -12,17 +12,25 @@ public class Monster extends Thing {
     Image img
     ///*/
     
-    //Elemental type of monster. Currently 'String', may change
-    private String element = NULL;
-    //Stat values of monster
-    private double hp = 1;
-    private double atk = 1;
-    private double def = 1;
-    //The Attacks of the monster
-    private Attack att1 = new Attack();
-    private Attack att2 = new Attack();
-    private Attack att3 = new Attack();
+    //The level of the monster, influences base stats
+    int level = 1;
+    //Elemental type of monster. Currently 'String' data type, may change
+    String element = NULL;
+    //Base stat values of monster
+    //These
+    double base_hp = 1;
+    double base_atk = 1;
+    double base_def = 1;
+    //Current stat values for monster
+    //These will change during battle
+    double curr_hp = base_hp;
+    double curr_atk = base_atk;
+    double curr_def = base_def;
     
+    //The Attacks of the monster
+    Attack att1 = new Attack();
+    Attack att2 = new Attack();
+    Attack att3 = new Attack();
     
     //Constructors
     //See 'Thing' class for notes
@@ -50,17 +58,17 @@ public class Monster extends Thing {
         this(name, desc, img, element, -1, -1, -1, null, null, null);
     }
     
-    public Monster(String name, String desc, Image img, String element, double hp, double atk, double def) {
-        this(name, desc, img, element, hp, atk, def, null, null, null);
+    public Monster(String name, String desc, Image img, String element, double base_hp, double base_atk, double base_def) {
+        this(name, desc, img, element, base_hp, base_atk, base_def, null, null, null);
     }
     
-    public Monster(String name, String desc, Image img, String element, double hp,
-                    double atk, double def, Attack att1, Attack att2, Attack att3) {
+    public Monster(String name, String desc, Image img, String element, double base_hp,
+                    double base_atk, double base_def, Attack att1, Attack att2, Attack att3) {
         super(name, desc, img);
         if (element != null) this.element = element;
-        if (hp >= 0) this.hp = hp;
-        if (atk >= 0) this.atk = atk;
-        if (def >= 0) this.def = def;
+        if (base_hp >= 0) this.base_hp = this.curr_hp = base_hp;
+        if (base_atk >= 0) this.base_atk = this.curr_atk = base_atk;
+        if (base_def >= 0) this.base_def = this.curr_def = base_def;
         if (att1 != null) this.att1 = att1;
         if (att2 != null) this.att2 = att2;
         if (att3 != null) this.att3 = att3;
@@ -71,14 +79,23 @@ public class Monster extends Thing {
     public String getElement() {return element;}
     public void setElement(String element) {this.element = element;}
     
-    public double getHp() {return hp;}
-    public void setHp(double hp) {this.hp = hp;}
+    public double getBaseHp() {return base_hp;}
+    public void setBaseHp(double base_hp) {this.base_hp = base_hp;}
     
-    public double getAtk() {return atk;}
-    public void setAtk(double atk) {this.atk = atk;}
+    public double getBaseAtk() {return base_atk;}
+    public void setBaseAtk(double base_atk) {this.base_atk = base_atk;}
     
-    public double getDef() {return def;}
-    public void setDef(double def) {this.def = def;}
+    public double getBaseDef() {return base_def;}
+    public void setBaseDef(double base_def) {this.base_def = base_def;}
+    
+    public double getCurrHp() {return curr_hp;}
+    public void setCurrHp(double curr_hp) {this.curr_hp = curr_hp;}
+    
+    public double getCurrAtk() {return curr_atk;}
+    public void setCurrAtk(double curr_atk) {this.curr_atk = curr_atk;}
+    
+    public double getCurrDef() {return curr_def;}
+    public void setCurrDef(double curr_def) {this.curr_def = curr_def;}
     
     public Attack getAtt1() {return att1;}
     public void setAtt1(Attack att) {att1 = att;}
